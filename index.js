@@ -186,9 +186,9 @@ let slowedSomeFunction = slower(someFunction, 5);
 slowedSomeFunction("Hello, ", "Sergiy!"); // показывает "test" после 1000 мс
 
 
-function slower(someFunction, _ms) {
+function slower(someFunction, seconds) {
   console.log("Chill out, you will get you result in 5 seconds")
   return function() {
-    setTimeout(() => someFunction.apply(this, arguments), 5000);
+    setTimeout(() => someFunction.apply(this, arguments), seconds * 1000);
   };
 }
