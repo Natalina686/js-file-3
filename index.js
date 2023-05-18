@@ -183,7 +183,7 @@ console.log(g, n);
 let slowedSomeFunction = slower(someFunction, 5);
 
 
-slowedSomeFunction("Hello, ", "Sergiy!"); // показывает "test" после 1000 мс
+slowedSomeFunction("Hello, ", "Sergiy!");
 
 
 function slower(someFunction, seconds) {
